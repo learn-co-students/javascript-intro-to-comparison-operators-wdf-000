@@ -10,12 +10,12 @@ By now you know about the following comparison operators:
 
 | Operator      | Description   | Example |
 | ------------- | ------------- |-------- |
-| ==            | checks if calue of two operands are equal or not. If yes then returns true  | (10 == 20) is not true; hence returns false |
+| ==            | checks if value of two operands are equal or not. If yes then returns true  | (10 == 20) is not true; hence returns false |
 | !=            |checks if the value of 2 operands are equal. If values are not equal, returns true| (a != b) is true; hence returns true |
 | >             | checks if value of left operand is greater than value of right operand. If left operand is greater than right operand, returns true  | (10 > 20) is not true hence returns false         | 
-| <  | checks if value of left operand is less than value of right operand. If left operand is less than righ operand, returns true | (10 < 20) is true        | 
+| <  | checks if value of left operand is less than value of right operand. If left operand is less than right operand, returns true | (10 < 20) is true        | 
 | >=   | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false  | (10 >= 20 ) is false         | 
-| <=  | checks if value of left operand is less than or equal to right operand. If left operamd is less than or equal to righ operand, returns true; else returns false  |  (10 <= 20) is true       | 
+| <=  | checks if value of left operand is less than or equal to right operand. If left operand is less than or equal to right operand, returns true; else returns false  |  (10 <= 20) is true       | 
 
 ## Unique to JavaScript
 
@@ -37,7 +37,7 @@ foo == bar; // returns false
 foo != bar; // returns true
 
 // does  1 equal "1"?
-foo == yoo; // returns true. Why? Because == opertor forces coercion of string 1 ("1") into number 1 (1)
+foo == yoo; // returns true. Why? Because == operator forces coercion of string 1 ("1") into number 1 (1)
 ```
 
 #### Strict comparison operators
