@@ -1,0 +1,6 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - js/comparison.js
+  specs:
+    - spec/comparison_spec.js
