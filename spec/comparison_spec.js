@@ -1,5 +1,5 @@
 'use strict';
-describe('Intro to Jasmine and JS basics', function() {
+describe('Comparison Operator Basics', function() {
   
   describe('#testFalseLooseEqualityComparison', function() {
     it('should return false because 0 and 1 are not equal in value', function() {
@@ -29,7 +29,7 @@ describe('Intro to Jasmine and JS basics', function() {
 
   describe('#testTrueStrictEqualityComparison', function() {
     it('should return false because 1 and parseInt("1") are the same datatype', function() {
-      expect(testTrueStrictEqualityComparison().toBe(true);
+      expect(testTrueStrictEqualityComparison()).toBe(true);
     });
     
   });
