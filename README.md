@@ -1,5 +1,11 @@
 # JavaScript Comparison Operators
 
+## Objectives
+
++ Explain the different comparison operators in JS
++ Explain strict comparison operators
++ Use strict comparison operators
+
 ## About
 
 Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. 
