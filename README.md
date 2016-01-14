@@ -46,6 +46,12 @@ On the other hand, **strict comparison operators** (`===` and `!==` ) compare bo
 + Define a function `testTrueStrictEqualityComparison` that does not take any parameters. Inside the function, define two variables, one that stores `1` and the other stores `"1"`. 
 The return value of the function should be the result of a strict equality comparison (`===`) between the variable storing the integer, and the `parseInt` value of the variable storing the string.
 
+Here is an Example:
+```js
+20 == '20' //=> true
+20 === '20' //=> false
+```
+
 ## Resources
 
 * [MDN - Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
