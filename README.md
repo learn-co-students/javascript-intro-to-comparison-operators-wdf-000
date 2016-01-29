@@ -1,8 +1,14 @@
 # JavaScript Comparison Operators
 
+## Objectives
+
++ Explain the different comparison operators in JS
++ Explain strict comparison operators
++ Use strict comparison operators
+
 ## About
 
-Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. 
+Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. You'll be coding along in `js/comparison.js`. Make sure you run `learn -b` to run the tests.
 
 ## List
 
@@ -17,7 +23,7 @@ By now you know about the following comparison operators:
 | >=   | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false  | (10 >= 20 ) is false         | 
 | <=  | checks if value of left operand is less than or equal to right operand. If left operand is less than or equal to right operand, returns true; else returns false  |  (10 <= 20) is true       | 
 
-## Unique to JavaScript
+## Strict and Loose Comparison Operators
 
 In JavaScript, in addition to the regular comparison operators, we have **strict comparison operators**; which are strict equals  (`===`) and strict not-equals (`!==`).
 
@@ -25,35 +31,25 @@ In JavaScript, in addition to the regular comparison operators, we have **strict
 
 **Loose comparison operators** ( `==` and `!=` ) are quite liberal - they convert type to match one another. This means that values may be considered equal even if they are different types, since the operator will force coercion of one or both operators into a single type (usually a number) before performing a comparison.
 
-```javascript
-var bar = 0;
-var foo = 1;
++ Define a function `testFalseLooseEqualityComparison` that does not take any parameters. In this function, define two variables. The first variable should store the integer `0` and the second the integer `1`. The return value of the function should be the evaluation of a loose equality comparison (`==`) of the two variables. The return value should be `false` because `0` and `1` are not the same value.
 
-var yoo = "1";
-var zee = 2;
++ Define a function `testTrueLooseNonEqualityComparison` that does not take any parameters. In this function, define two variables, one storing `0` and one storing `1`. The return value of the function should be the evaluation of a loose non-equality comparison (`!=`) of the two variables. The return value should be `true` because `0` and `1` are not equal.
 
-// does 1 equal 0?
-foo == bar; // returns false
-foo != bar; // returns true
-
-// does  1 equal "1"?
-foo == yoo; // returns true. Why? Because == operator forces coercion of string 1 ("1") into number 1 (1)
-```
++ Define a function `testTrueLooseEqualityComparison` that does not take any parameters. The function should contain two variables, one storing `1` and one storing `"1"`. The return value should be the evaluation of a loose equality comparison (`==`) between the two variables. The return value should be `true` because in JavaScript `1` and `"1"` are equal in value.
 
 #### Strict comparison operators
 
 On the other hand, **strict comparison operators** (`===` and `!==` ) compare both type and value equality.
 
-```javascript
-var bar = 0;
-var foo = 1;
++ Define a function `testFalseStrictEqualityComparison` that does not take any parameters. Inside the function define two variables, one that stores `1` and another that stores `"1"`. The return value of the function should be the result of a strict equality comparison (`===`) between the two variables. The return value should be `false` because `1` an `"1"` are not the same data types.
 
-var yoo = '1';
-var zee = 2;
++ Define a function `testTrueStrictEqualityComparison` that does not take any parameters. Inside the function, define two variables, one that stores `1` and the other stores `"1"`. 
+The return value of the function should be the result of a strict equality comparison (`===`) between the variable storing the integer, and the `parseInt` value of the variable storing the string.
 
-foo === yoo; // returns false because though 0 and 1 are of the same type (both are numbers = identities match) they are not equal
-
-foo === parseInt(yoo); returns true because `parseInt` converts string 1 to integer(number) 1
+Here is an Example:
+```js
+20 == '20' //=> true
+20 === '20' //=> false
 ```
 
 ## Resources
