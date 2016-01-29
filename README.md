@@ -60,4 +60,4 @@ foo === parseInt(yoo); returns true because `parseInt` converts string 1 to inte
 
 * [MDN - Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
-<a href='https://learn.co/lessons/intro-to-comparison-operators.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-comparison-operators.js' title='JavaScript Comparison Operators'>JavaScript Comparison Operators</a> on Learn.co and start learning to code for free.</p>
