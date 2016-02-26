@@ -12,16 +12,16 @@ Recall that Comparison operators allow you to test the relationship (equality an
 
 ## List
 
-By now you know about the following comparison operators: 
+By now you know about the following comparison operators:
 
 | Operator      | Description   | Example |
 | ------------- | ------------- |-------- |
 | ==            | checks if value of two operands are equal or not. If yes then returns true  | (10 == 20) is not true; hence returns false |
 | !=            |checks if the value of 2 operands are equal. If values are not equal, returns true| (a != b) is true; hence returns true |
-| >             | checks if value of left operand is greater than value of right operand. If left operand is greater than right operand, returns true  | (10 > 20) is not true hence returns false         | 
-| <  | checks if value of left operand is less than value of right operand. If left operand is less than right operand, returns true | (10 < 20) is true        | 
-| >=   | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false  | (10 >= 20 ) is false         | 
-| <=  | checks if value of left operand is less than or equal to right operand. If left operand is less than or equal to right operand, returns true; else returns false  |  (10 <= 20) is true       | 
+| >             | checks if value of left operand is greater than value of right operand. If left operand is greater than right operand, returns true  | (10 > 20) is not true hence returns false         |
+| <  | checks if value of left operand is less than value of right operand. If left operand is less than right operand, returns true | (10 < 20) is true        |
+| >=   | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false  | (10 >= 20 ) is false         |
+| <=  | checks if value of left operand is less than or equal to right operand. If left operand is less than or equal to right operand, returns true; else returns false  |  (10 <= 20) is true       |
 
 ## Strict and Loose Comparison Operators
 
@@ -43,7 +43,7 @@ On the other hand, **strict comparison operators** (`===` and `!==` ) compare bo
 
 + Define a function `testFalseStrictEqualityComparison` that does not take any parameters. Inside the function define two variables, one that stores `1` and another that stores `"1"`. The return value of the function should be the result of a strict equality comparison (`===`) between the two variables. The return value should be `false` because `1` an `"1"` are not the same data types.
 
-+ Define a function `testTrueStrictEqualityComparison` that does not take any parameters. Inside the function, define two variables, one that stores `1` and the other stores `"1"`. 
++ Define a function `testTrueStrictEqualityComparison` that does not take any parameters. Inside the function, define two variables, one that stores `1` and the other stores `"1"`.
 The return value of the function should be the result of a strict equality comparison (`===`) between the variable storing the integer, and the `parseInt` value of the variable storing the string.
 
 Here is an Example:
@@ -51,6 +51,12 @@ Here is an Example:
 20 == '20' //=> true
 20 === '20' //=> false
 ```
+
+The following is written in all caps to stress its importance; it's qualified in mixed case to note the one minor exception.
+
+**YOU ALMOST ALWAYS WANT TO USE `===` or `!==`.**
+
+Relying on JavaScript's implicit type-casting is inviting subtle and hard to track bugs into your code. Use `===` and `!==`. The only exception is when you're dealing with a value that might be either `null` or `undefined` but can also be `0` or `false`. In this case, a simple `if (variable) { ... }` won't work, because all of the above are false-y. But we can check `if (variable == null) { ... }` or `if (variable != null) { ... }` to catch `null` and `undefined` but not `0` and `false`.
 
 ## Resources
 
