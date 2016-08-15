@@ -1,4 +1,5 @@
 'use strict';
+var expect = require('expect.js');
 describe('Comparison Operator Basics', function() {
 
   describe('#testFalseLooseEqualityComparison', function() {
